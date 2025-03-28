@@ -1,6 +1,6 @@
 module github.com/wangle201210/dify-retriever-mcp
 
-go 1.24.0
+go 1.23.1
 
 require (
 	github.com/cloudwego/eino-ext/components/retriever/dify v0.0.0-20250326075314-149c6522c118
