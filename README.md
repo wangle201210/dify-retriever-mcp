@@ -2,9 +2,13 @@
 dify 知识库检索工具
 
 ## 安装
+### 若本地有go环境
 ```bash
 go install github.com/wangle201210/dify-retriever-mcp
 ```
+### 若没有go环境
+[下载二进制文件](https://github.com/wangle201210/dify-retriever-mcp/releases/latest)
+
 
 ## 用法
 ```json
