@@ -8,6 +8,7 @@ go install github.com/wangle201210/dify-retriever-mcp
 ```
 ### 若没有go环境
 [下载二进制文件](https://github.com/wangle201210/dify-retriever-mcp/releases/latest)
+把下载的可执行文件放到自己的 PATH 目录即可
 
 
 ## 用法
