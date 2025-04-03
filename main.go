@@ -17,10 +17,11 @@ func main() {
 	)
 
 	s.AddTool(getDifyTool(), difyHandler)
-	// {"jsonrpc":"2.0","id":1,"method":"tools/call","params":{"name":"dify/retriever","arguments":{"query":"test"}}}
+	// {"jsonrpc":"2.0","id":1,"method":"tools/call","params":{"name":"dify_retriever","arguments":{"query":"test"}}}
 	if err := server.ServeStdio(s); err != nil {
 		fmt.Printf("Server error: %v\n", err)
 	}
+	// 如果想做sse就取消下面的注释
 	// sseServer := server.NewSSEServer(s, server.WithBaseURL("http://localhost:8088"))
 	// log.Printf("SSE server listening on :8088")
 	// if err := sseServer.Start(":8088"); err != nil {
