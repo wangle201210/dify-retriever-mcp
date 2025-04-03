@@ -13,7 +13,7 @@ import (
 
 func getDifyTool() mcp.Tool {
 	datasetName := os.Getenv("DIFY_DATASET_NAME")
-	return mcp.NewTool("dify/retriever",
+	return mcp.NewTool("dify_retriever",
 		mcp.WithDescription(fmt.Sprintf("检索 %s 知识库", datasetName)),
 		mcp.WithString("query",
 			mcp.Required(),
